@@ -16,8 +16,8 @@ form.addEventListener('submit', (e) => {
                 message1.textContent = data.error
                 message2.textContent = ''
             } else {
-                message1.textContent = data.location
-                message2.textContent = data.forecast
+                message1.innerHTML = '<strong>Location: </strong>'+data.location
+                message2.innerHTML = '<strong>Forecast: </strong>'+data.forecast
             }
         })
     })

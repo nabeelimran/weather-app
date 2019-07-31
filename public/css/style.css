@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 body {
+    font-family: roboto, sans-serif;
     width: 650px;
     margin: 0 auto;
     padding: 0px 16px;
@@ -15,19 +18,30 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 8px 0px 16px 0px;
+    margin-bottom:24px;
     border-bottom: #777 solid 1px;;
-}
-header h1 {
-    margin: 0px 0px;
 }
 header a {
     text-decoration: none;
     color: #777;
     margin-right: 12px;
 }
-img {
-    width: 400px;
+header a:hover {
+    color: #222;
+}
+.about {
+    display: flex;
+}
+.about img{
+    width: 350px;
+    flex: 1;
+}
+.about div{
+    flex: 1;
+    line-height: 22px;
+    padding: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
 }
 footer {
     color: #777;
@@ -47,4 +61,7 @@ button {
     padding: 8px;
     cursor: pointer;
     outline-color: #333333;
+}
+#messages {
+    margin-top: 48px;
 }

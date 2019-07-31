@@ -38,7 +38,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req,res) => {
     res.render('help', {
         title: 'Help',
-        message: 'This is a cool help message',
+        message: 'Currently no help topic available ',
         name: 'Nabeel Imran'
     })
 })
